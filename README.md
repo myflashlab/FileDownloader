@@ -13,7 +13,7 @@ var file:File = File.desktopDirectory.resolvePath("big_file.zip");
 var _fileDownloader:FileDownloader = new FileDownloader(url, file);
 
 _fileDownloader.addEventListener(ProgressEvent.PROGRESS, onDownloadProgress);
-		_fileDownloader.addEventListener(Event.COMPLETE, onDownloadComplete);
+_fileDownloader.addEventListener(Event.COMPLETE, onDownloadComplete);
 
 // start the download progress
 _fileDownloader.start();
